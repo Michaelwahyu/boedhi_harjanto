@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- logo -->
+    <link rel="icon" href="assets/img/logopdi.png">
+
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Boedhi Harjanto</title>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Boedhi Harjanto</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">
+                            <i class="uil uil-tag-alt nav__icon"></i> Penawaran
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="beranda.html" class="nav__link">
+                            <i class="uil uil-estate nav__icon"></i> Beranda
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="profile.html" class="nav__link">
+                            <i class="uil uil-user nav__icon"></i> Profile
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="visimisi.html" class="nav__link">
+                            <i class="uil uil-file-alt nav__icon"></i> Visi Misi
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#program" class="nav__link active-link">
+                            <i class="uil uil-briefcase-alt nav__icon"></i> Program
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="foto.html" class="nav__link">
+                            <i class="uil uil-scenery nav__icon"></i> Foto
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="dukungan.html" class="nav__link">
+                            <i class="uil uil-message nav__icon"></i> Dukungan
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__btns">
+                <!-- Ganti tema -->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== PROGRAM ====================-->
+        <section class="program section" id="program">
+            <h2 class="section__title">Program Kerja</h2>
+            <span class="section__subtitle">Untuk Tangerang Selatan yang lebih sejahtera</span>
+
+            <div class="program__container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!--==================== PROGRAM 1 ====================-->
+                    <div class="program__content grid swiper-slide">
+                        <img src="assets/img/program1.jpg" alt="" class="program__img">
+
+                        <div class="program__data">
+                            <h3 class="program__title">Gema Hidup</h3>
+                            <p class="program__description">Program GEMA HIDUP bertujuan untuk memupuk kemandirian dan keberdayaan generasi muda melalui pendidi...</p>
+                            <a href="program1-detail.html" class="button button--flex button--small program__button">
+                                Selengkapnya
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--==================== PROGRAM 2 ====================-->
+                    <div class="program__content grid swiper-slide">
+                        <img src="assets/img/program2.jpg" alt="" class="program__img">
+
+                        <div class="program__data">
+                            <h3 class="program__title">Sehat Bersama Rakyat (SBR)</h3>
+                            <p class="program__description">Program kesehatan masyarakat yang fokus pada pencegahan penyakit kesehatan melalui...</p>
+                            <a href="program2-detail.html" class="button button--flex button--small program__button">
+                                Selengkapnya
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--==================== PROGRAM 3 ====================-->
+                    <div class="program__content grid swiper-slide">
+                        <img src="assets/img/program3.jpg" alt="" class="program__img">
+
+                        <div class="program__data">
+                            <h3 class="program__title">PROLINS (Program Lingkungan Sehat)</h3>
+                            <p class="program__description">PROLINS adalah program yang bertujuan untuk menciptakan lingkungan yang...</p>
+                            <a href="program3-detail.html" class="button button--flex button--small program__button">
+                                Selengkapnya
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add Arrows -->
+                <div class="swiper-button-next">
+                    <i class="uil uil-angle-right-b swiper-program-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left-b swiper-program-icon"></i>
+                </div>
+
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">Boedhi Harjanto</h1>
+                    <span class="footer__subtitle">Calon Legislatif Tangerang Selatan</span>
+                </div>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="beranda.html" class="footer__link">Beranda</a>
+                    </li>
+                    <li>
+                        <a href="profile.html" class="footer__link">Profile</a>
+                    </li>
+                    <li>
+                        <a href="visimisi.html" class="footer__link">VisiMisi</a>
+                    </li>
+                    <li>
+                        <a href="#program" class="footer__link">Program</a>
+                    </li>
+                    <li>
+                        <a href="foto.html" class="footer__link">Foto</a>
+                    </li>
+                    <li>
+                        <a href="dukungan.html" class="footer__link">Dukungan</a>
+                    </li>
+                </ul>
+
+                <div class="footer__socials">
+                    <a href="https://www.facebook.com/boedhi.harjanto.1?mibextid=LQQJ4d" target="_blank" class="footer__social">
+                        <i class="uil uil-facebook-f"></i>
+                    </a>
+
+                    <a href="https://instagram.com/boedhiharjanto?igshid=MzRlODBiNWFlZA==" target="_blank" class="footer__social">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+
+                    <a href="https://www.tiktok.com/@boedhi.harjanto?_t=8eiPURsjB9F&_r=1" target="_blank" class="footer__social">
+                        <i class="uil uil-music-note"></i>
+                    </a>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; Boedhi Harjanto. All right reserved</p>
+        </div>
+    </footer>
+
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+
+
+    <!--==================== SWIPER JS ====================-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

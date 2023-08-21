@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- logo -->
+    <link rel="icon" href="assets/img/logopdi.png">
+
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Boedhi Harjanto</title>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Boedhi Harjanto</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#penawaran" class="nav__link active-link">
+                            <i class="uil uil-tag-alt nav__icon"></i> Penawaran
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="beranda.html" class="nav__link">
+                            <i class="uil uil-estate nav__icon"></i> Beranda
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="profile.html" class="nav__link">
+                            <i class="uil uil-user nav__icon"></i> Profile
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="visimisi.html" class="nav__link">
+                            <i class="uil uil-file-alt nav__icon"></i> Visi Misi
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="program.html" class="nav__link">
+                            <i class="uil uil-briefcase-alt nav__icon"></i> Program
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="foto.html" class="nav__link">
+                            <i class="uil uil-scenery nav__icon"></i> Foto
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="dukungan.html" class="nav__link">
+                            <i class="uil uil-message nav__icon"></i> Dukungan
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__btns">
+                <!-- Ganti tema -->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== penawaran ====================-->
+        <section class="penawaran section" id="penawaran">
+            <h2 class="section__title">Halo, Selamat Datang</h2>
+            <span class="section__subtitle">Sebagai ucapan rasa terima kasih <br> ada penawaran spesial nih buat kamu, ayo dipilih.</span>
+
+            <div class="penawaran__container container grid">
+                <!--==================== penawaran 1 ====================-->
+                <div class="penawaran__content">
+                    <div>
+                        <i class="uil uil-gift penawaran__icon"></i>
+                        <h3 class="penawaran__title">Kaos Gratis</h3>
+                    </div>
+                    <span class="button button--flex button--small button--link penawaran__button" id="showModal">
+                        Pilih
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+                    <div class="penawaran__modal" id="modal">
+                        <div class="penawaran__modal-content">
+                            <h4 class="penawaran__modal-title">Pilih Jenis Desain Kaos</h4>
+                            <i class="uil uil-times penawaran__modal-close" id="closeModal"></i>
+                            <ul class="penawaran__modal-penawaran grid">
+                                <li class="penawaran__modal-tawaran" onclick="selectDesign('Boedhi Harjanto')">
+                                    <i class="uil uil-check-circle penawaran__modal-icon"></i>
+                                    <p>Desain Kaos dari Boedhi Harjanto</p>
+                                </li>
+                                <li class="penawaran__modal-tawaran" onclick="sendDesignByEmail()">
+                                    <i class="uil uil-check-circle penawaran__modal-icon"></i>
+                                    <p>Desain Sendiri</p>
+                                </li>
+                            </ul>
+                            <div class="penawaran__modal-design" id="designContainer" style="display: none;">
+                                <!-- Ini adalah kontainer untuk gambar desain dari Boedhi Harjanto -->
+                            </div>
+                            <div class="penawaran__modal-design" id="customDesign" style="display: none;">
+                                <a href="mailto:timboedhiharjanto@gmail.com?subject=Kirim Desain Kaos Sendiri">
+                                    <i class="uil uil-envelope"></i> Kirim Desain Sendiri via Email
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                
+
+                <!--==================== penawaran 2 ====================-->
+                <div class="penawaran__content">
+                    <div>
+                        <i class="uil uil-envelope-alt penawaran__icon"></i>
+                        <h3 class="penawaran__title">Sim Murah</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link penawaran__button">
+                        Pilih
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+
+                    <div class="penawaran__modal">
+                        <div class="penawaran__modal-content">
+                            <h4 class="penawaran__modal-title">Ikutin instruksinya ya</h4>
+                            <i class="uil uil-times penawaran__modal-close"></i>
+
+                            <ul class="penawaran__modal-penawaran grid">
+                                <li class="penawaran__modal-tawaran">
+                                    <i class="uil uil-check-circle penawaran__modal-icon"></i>
+                                    <p>Pahami dulu isi websitenya ya.</p>
+                                </li>
+                                <li class="penawaran__modal-tawaran">
+                                    <i class="uil uil-check-circle penawaran__modal-icon"></i>
+                                    <p>Lalu, pergi ke menu dukungan.</p>
+                                </li>
+                                <li class="penawaran__modal-tawaran">
+                                    <i class="uil uil-check-circle penawaran__modal-icon"></i>
+                                    <p>Masukkan nama lengkap beserta email ya.</p>
+                                </li>
+                                <li class="penawaran__modal-tawaran">
+                                    <i class="uil uil-check-circle penawaran__modal-icon"></i>
+                                    <p>Jangan lupa mengisi pesan dukungan ya, dukungan dari kalian sangat berarti.</p>
+                                </li>
+                                <li class="penawaran__modal-tawaran">
+                                    <i class="uil uil-check-circle penawaran__modal-icon"></i>
+                                    <p>Lalu, tunggu sampai kalian dihubungi oleh tim kami, terimakasih.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!--==================== penawaran 3 ====================-->
+                <div class="penawaran__content">
+                    <div>
+                        <i class="uil uil-users-alt penawaran__icon"></i>
+                        <h3 class="penawaran__title">Join Komunitas</h3>
+                    </div>
+                
+                    <span class="button button--flex button--small button--link penawaran__button" id="showModal">
+                        Pilih
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+                
+                    <div class="penawaran__modal" id="modal">
+                        <div class="penawaran__modal-content">
+                            <h4 class="penawaran__modal-title">Pilih Komunitas yang Anda Inginkan</h4>
+                            <i class="uil uil-times penawaran__modal-close" id="closeModal"></i>
+                
+                            <ul class="penawaran__modal-penawaran grid">
+                                <li class="penawaran__modal-tawaran" onclick="selectKomunitas('Seni')">
+                                    <i class="uil uil-palette penawaran__modal-icon"></i>
+                                    <p>Komunitas Seni</p>
+                                </li>
+                                <li class="penawaran__modal-tawaran" onclick="selectKomunitas('Sport')">
+                                    <i class="uil uil-football penawaran__modal-icon"></i>
+                                    <p>Komunitas Sport</p>
+                                </li>
+                                <li class="penawaran__modal-tawaran" onclick="selectKomunitas('Musik')">
+                                    <i class="uil uil-music penawaran__modal-icon"></i>
+                                    <p>Komunitas Musik</p>
+                                </li>
+                                <li class="penawaran__modal-tawaran" onclick="selectKomunitas('Game')">
+                                    <i class="uil uil-game-structure penawaran__modal-icon"></i>
+                                    <p>Komunitas Game</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="penawaran__scroll">
+                    <a href="#home" class="penawaran__scroll-button button--flex">
+                        <i class="uil uil-mouse-alt penawaran__scroll-mouse"></i>
+                        <span class="penawaran__scroll-name">Geser kebawah</span>
+                        <i class="uil uil-arrow-down penawaran__scroll-arrow"></i>
+                    </a>
+                </div>
+                </section>
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__social">
+                        <a href="https://www.facebook.com/boedhi.harjanto.1?mibextid=LQQJ4d" target="_blank" class="home__social-icon">
+                            <i class="uil uil-facebook-f"></i>
+                        </a>
+                        <a href="https://instagram.com/boedhiharjanto?igshid=MzRlODBiNWFlZA==" target="_blank" class="home__social-icon">
+                            <i class="uil uil-instagram"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@boedhi.harjanto?_t=8eiPURsjB9F&_r=1" target="_blank" class="home__social-icon">
+                            <i class="uil uil-music-note"></i>
+                        </a>
+                    </div>
+                    <div class="home__img">
+                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <mask id="mask0" mask-type="alpha">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+
+                                <image class="home__blob-img" x='12' y='12' href="assets/img/boedhi.png" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="home__data">
+                        <h1 class="home__title">Saya Boedhi <br>Harjanto</h1>
+                        <h3 class="home__subtitle">Calon Legislatif Tangerang Selatan Dapil Serpong dan Setu</h3>
+                        <p class="home__description">Tangerang Selatan punya masa depan cerah dan peranmu penting, anak muda! Mari kita transformasi bersama, membangun Legislatif yang progresif, andal, serta jujur. Ayo, waktunya mewujudkan Tangerang Selatan Jaya Sejahtera!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== PROFILE ====================-->
+        <section class="profile section" id="profile">
+            <h2 class="section__title">Profile</h2>
+            <span class="section__subtitle">Boedhi Harjanto</span>
+
+            <div class="profile__container container grid">
+                <img src="assets/img/profile.jpg" alt="" class="profile__img">
+
+                <div class="profile__data">
+                    <p class="profile__description">Hai, squad anak muda yang hebat! Gue Boedhi Harjanto, calon anggota legislatif di Tangerang Selatan dapil Serpong dan Setu. Gue berambisi banget kolaborasi bareng kalian untuk bikin Tangerang Selatan makin kece! Jadi, siap untuk aksi bareng demi masa depan kota yang keren?</p>
+
+                    <div class="profile__buttons">
+                        <a href="#" class="button button--flex">
+                            Video Profile <i class="uil uil-video button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== riwayat ====================-->
+        <section class="riwayat section">
+            <h2 class="section__title">Riwayat Hidup</h2>
+            <span class="section__subtitle">Boedhi Harjanto</span>
+
+            <div class="riwayat__container container">
+                <div class="riwayat__tabs">
+                    <div class="riwayat__button button--flex riwayat__active" data-target='#pendidikan'>
+                        <i class="uil uil-graduation-cap riwayat__icon"></i>
+                        Pendidikan
+                    </div>
+                    <div class="riwayat__button button--flex" data-target='#pengalaman'>
+                        <i class="uil uil-briefcase-alt riwayat__icon"></i>
+                        Pengalaman
+                    </div>
+                </div>
+
+                <div class="riwayat__sections">
+                    <!--==================== pendidikan ====================-->
+                    <div class="riwayat__content riwayat__active" data-content id="pendidikan">
+                        <!--==================== sd ====================-->
+                        <div class="riwayat__data">
+                            <div>
+                                <h3 class="riwayat__title">SD PIUS TEGAL</h3>
+                                <span class="riwayat__subtitle">Tegal, Jawa Tengah</span>
+                                <div class="riwayat__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2023 - 2023
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="riwayat__rounder"></span>
+                                <span class="riwayat__line"></span>
+                            </div>
+                        </div>
+
+                        <!--==================== smp ====================-->
+                        <div class="riwayat__data">
+                            <div></div>
+
+                            <div>
+                                <span class="riwayat__rounder"></span>
+                                <span class="riwayat__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="riwayat__title">SMP PIUS 1 TEGAL</h3>
+                                <span class="riwayat__subtitle">Tegal, Jawa Tengah</span>
+                                <div class="riwayat__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2023 - 2023
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--==================== sma ====================-->
+                        <div class="riwayat__data">
+                            <div>
+                                <h3 class="riwayat__title">SMA KARANGTURI SEMARANG</h3>
+                                <span class="riwayat__subtitle">Semarang, Jawa Tengah</span>
+                                <div class="riwayat__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2023 - 2023
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="riwayat__rounder"></span>
+                                <span class="riwayat__line"></span>
+                            </div>
+                        </div>
+
+                        <!--==================== universitas ====================-->
+                        <div class="riwayat__data">
+                            <div></div>
+
+                            <div>
+                                <span class="riwayat__rounder"></span>
+                                <!-- <span class="riwayat__line"></span> -->
+                            </div>
+
+                            <div>
+                                <h3 class="riwayat__title">UNTAG 17 AGUSTUS 1945 SEMARANG</h3>
+                                <span class="riwayat__subtitle">Semarang, Jawa Tengah</span>
+                                <div class="riwayat__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2023 - 2023
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--==================== pengalaman ====================-->
+                    <div class="riwayat__content" data-content id="pengalaman">
+                        <!--==================== pengalaman 1 ====================-->
+                        <div class="riwayat__data">
+                            <div>
+                                <h3 class="riwayat__title">TRAINING INSTITUTE OF MANAGEMENT & SERVICE (TIMS)</h3>
+                                <span class="riwayat__subtitle">Tegal, Jawa Tengah</span>
+                                <div class="riwayat__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2023 - 2023
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="riwayat__rounder"></span>
+                                <span class="riwayat__line"></span>
+                            </div>
+                        </div>
+
+                        <!--==================== pengalaman 2 ====================-->
+                        <div class="riwayat__data">
+                            <div></div>
+
+                            <div>
+                                <span class="riwayat__rounder"></span>
+                                <span class="riwayat__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="riwayat__title">PROGRAM PENGEMBANGAN EKSEKUTIF</h3>
+                                <span class="riwayat__subtitle">LEMBAGA MOTIVASI & PENDIDIKAN INDONESIA</span>
+                                <div class="riwayat__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2023 - 2023
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--==================== pengalaman 3 ====================-->
+                        <div class="riwayat__data">
+                            <div>
+                                <h3 class="riwayat__title">MARKETING COMMUNICATION TO CREATE STRATEGY</h3>
+                                <span class="riwayat__subtitle">FRONTIER EDUCATION DIVISION</span>
+                                <div class="riwayat__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2023 - 2023
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="riwayat__rounder"></span>
+                                <!-- <span class="riwayat__line"></span> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== visimisi ====================-->
+        <section class="visimisi section" id="visimisi">
+            <h2 class="section__title">Visi & Misi</h2>
+            <span class="section__subtitle">Boedhi Harjanto</span>
+
+            <div class="visimisi__container container grid">
+                <div>
+                    <!--==================== visi ====================-->
+                    <div class="visimisi__content visimisi__open">
+                        <div class="visimisi__header">
+                            <i class="uil uil-eye visimisi__icon"></i>
+
+                            <div>
+                                <h1 class="visimisi__title">Visi</h1>
+                                <span class="visimisi__subtitle">Boedhi Harjanto</span>
+                            </div>
+
+                            <i class="uil uil-angle-down visimisi__arrow"></i>
+                        </div>
+
+
+                        <div class="visimisi__list grid">
+                            <div class="visimisi__data">
+                                <div class="visimisi__titles">
+                                    <h3 class="visimisi__name">1</h3>
+                                    <p class="visimisi__description">Menjadi Bagian dari DPRD yang Gaul dengan Generasi Kini, Mengampanyekan Pendidikan Keren dan Inklusif di Tangerang Selatan terutama Serpong dan Setu, Nyediain Layanan Kesehatan yang Oke Buat Kita, Buka Lapangan Kerja Canggih, dan Bikin Ekonomi Keluarga Makin On.</p>
+                                </div>
+                            </div>
+                            <div class="visimisi__data">
+                                <div class="visimisi__titles">
+                                    <h3 class="visimisi__name">2</h3>
+                                    <p class="visimisi__description">Gaspol Bareng Generasi Sekarang! Perjuangkan Hak Kita di DPRD, Bikin Pendidikan dan Peluang Kerja Makin Ngejreng, Biar Hidup Semakin Kece!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--==================== misi ====================-->
+                    <div class="visimisi__content visimisi__close">
+                        <div class="visimisi__header">
+                            <i class="uil uil-rocket visimisi__icon"></i>
+
+                            <div>
+                                <h1 class="visimisi__title">Misi</h1>
+                                <span class="visimisi__subtitle">Boedhi Harjanto</span>
+                            </div>
+
+                            <i class="uil uil-angle-down visimisi__arrow"></i>
+                        </div>
+
+
+                        <div class="visimisi__list grid">
+                            <div class="visimisi__data">
+                                <div class="visimisi__titles">
+                                    <h3 class="visimisi__name">1</h3>
+                                    <p class="visimisi__description">Jadi, kita lagi gaspol nih buat ngedukung dana buat anak-anak yang kekurangan. Kita pengen upgrade sekolah jadi tempat yang kekinian abis, ada tekno dan kreativitasnya. Gak lupa, kita juga mau ngebuktiin ke guru-guru keren kalau mereka itu dihargai banget. Biar pendidikan jaman now bener-bener bisa nyambung sama dunia digital yang lagi ngehits</p>
+                                </div>
+                            </div>
+                            <div class="visimisi__data">
+                                <div class="visimisi__titles">
+                                    <h3 class="visimisi__name">2</h3>
+                                    <p class="visimisi__description">Kita adalah suara generasi muda yang lagi ngedukung pembangunan klinik modern di setiap kampung. Pastinya, kita juga bakal ngejaga agar para tenaga medis muda punya peran yang keren dan fasilitas kesehatan dilengkapi teknologi canggih. Bareng-bareng, kita mau memastikan kalau pelayanan kesehatan yang kita butuhin sekarang gampang dijangkau, sambil tetap mendorong perubahan gaya hidup sehat yang sesuai dengan jaman.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>        
+
+        <!--==================== PROGRAM ====================-->
+        <section class="program section" id="program">
+            <h2 class="section__title">Program Kerja</h2>
+            <span class="section__subtitle">Untuk Tangerang Selatan yang lebih sejahtera</span>
+
+            <div class="program__container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!--==================== PROGRAM 1 ====================-->
+                    <div class="program__content grid swiper-slide">
+                        <img src="assets/img/program1.jpg" alt="" class="program__img">
+
+                        <div class="program__data">
+                            <h3 class="program__title">Gema Hidup</h3>
+                            <p class="program__description">Program GEMA HIDUP bertujuan untuk memupuk kemandirian dan keberdayaan generasi muda melalui pendidi...</p>
+                            <a href="program1-detail.html" class="button button--flex button--small program__button">
+                                Selengkapnya
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--==================== PROGRAM 2 ====================-->
+                    <div class="program__content grid swiper-slide">
+                        <img src="assets/img/program2.jpg" alt="" class="program__img">
+
+                        <div class="program__data">
+                            <h3 class="program__title">Sehat Bersama Rakyat (SBR)</h3>
+                            <p class="program__description">Program kesehatan masyarakat yang fokus pada pencegahan penyakit kesehatan melalui...</p>
+                            <a href="#" class="button button--flex button--small program__button">
+                                Selengkapnya
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--==================== PROGRAM 3 ====================-->
+                    <div class="program__content grid swiper-slide">
+                        <img src="assets/img/program3.jpg" alt="" class="program__img">
+
+                        <div class="program__data">
+                            <h3 class="program__title">PROLINS (Program Lingkungan Sehat)</h3>
+                            <p class="program__description">PROLINS adalah program yang bertujuan untuk menciptakan lingkungan yang...</p>
+                            <a href="#" class="button button--flex button--small program__button">
+                                Selengkapnya
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add Arrows -->
+                <div class="swiper-button-next">
+                    <i class="uil uil-angle-right-b swiper-program-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left-b swiper-program-icon"></i>
+                </div>
+
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!--==================== FOTO ====================-->
+        <section class="foto section" id="foto">
+            <h2 class="section__title">Foto Terbaru</h2>
+            <span class="section__subtitle">Tentang Boedhi Harjanto</span>
+
+            <div class="foto__container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!--==================== FOTO 1 ====================-->
+                    <div class="foto__content grid swiper-slide">
+                        <img src="assets/img/foto1.jpg" alt="" class="foto__img">
+
+                        <div class="foto__data">
+                            <p class="foto__description">Kamis, 08 Agustus 2023 21:22 WIB</p>
+                            <h3 class="foto__title">Bertani Semangka</h3>
+                        </div>
+                    </div>
+
+                    <!--==================== FOTO 2 ====================-->
+                    <div class="foto__content grid swiper-slide">
+                        <img src="assets/img/foto2.jpg" alt="" class="foto__img">
+
+                        <div class="foto__data">
+                            <p class="foto__description">Kamis, 08 Agustus 2023 21:22 WIB</p>
+                            <h3 class="foto__title">Aksi Peduli Lingkungan Di Pantai</h3>
+                        </div>
+                    </div>
+
+                    <!--==================== FOTO 3 ====================-->
+                    <div class="foto__content grid swiper-slide">
+                        <img src="assets/img/foto3.jpg" alt="" class="foto__img">
+
+                        <div class="foto__data">
+                            <p class="foto__description">Kamis, 08 Agustus 2023 21:22 WIB</p>
+                            <h3 class="foto__title">Potret Relawan Boedhi Harjanto</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add Arrows -->
+                <div class="swiper-button-next">
+                    <i class="uil uil-angle-right-b swiper-foto-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left-b swiper-foto-icon"></i>
+                </div>
+
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!--==================== HELP ====================-->
+        <section class="help section">
+            <div class="help__bg">
+                <div class="help__container container grid">
+                    <div class="help__data">
+                        <h2 class="help__title">Halo, ada yang bisa saya bantu?</h2>
+                        <p class="help__description">Tim Boedhi Harjanto akan menyeleksi dan menghubungi Anda.</p>
+                        <a href="mailto: timboedhiharjanto@gmail.com" class="button button--flex button--white">
+                            Hubungi Saya
+                            <i class="uil uil-envelope-alt help__icon button__icon"></i>
+                        </a>
+                    </div>
+
+                    <img src="assets/img/boedhi.png" alt="" class="help__img">
+                </div>
+            </div>
+        </section>
+
+        <!--==================== TESTIMONI ====================-->
+        <section class="testimoni section">
+            <h2 class="section__title">Testimoni</h2>
+            <span class="section__subtitle">Dukungan dari anda sangat berarti</span>
+
+            <div class="testimoni__container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!--==================== TESTIMONI 1 ====================-->
+                    <div class="testimoni__content swiper-slide">
+                        <div class="testimoni__data">
+                            <div class="testimoni__header">
+                                <img src="assets/img/testimoni1.jpg" alt="" class="testimoni__img">
+
+                                <div>
+                                    <h3 class="testimoni__name">Michael</h3>
+                                    <span class="testimoni__client">Pengunjung</span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <i class="uil uil-star testimoni__icon-star"></i>
+                                <i class="uil uil-star testimoni__icon-star"></i>
+                                <i class="uil uil-star testimoni__icon-star"></i>
+                                <i class="uil uil-star testimoni__icon-star"></i>
+                                <i class="uil uil-star testimoni__icon-star"></i>
+                            </div>
+                        </div>
+
+                        <p class="testimoni__description">Aku pilih dia karena dia punya integritas yang ngga diragukan lagi, komitmennya bagus, dan dia juga punya gaya kepemimpinan yang keren.</p>
+                    </div>
+
+                    <!--==================== TESTIMONI 2 ====================-->
+                    <div class="testimoni__content swiper-slide">
+                        <div class="testimoni__data">
+                            <div class="testimoni__header">
+                                <img src="assets/img/testimoni2.jpg" alt="" class="testimoni__img">
+
+                                <div>
+                                    <h3 class="testimoni__name">Wahyu</h3>
+                                    <span class="testimoni__client">Pengunjung</span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <i class="uil uil-star testimoni__icon-star"></i>
+                                <i class="uil uil-star testimoni__icon-star"></i>
+                                <i class="uil uil-star testimoni__icon-star"></i>
+                                <i class="uil uil-star testimoni__icon-star"></i>
+                                <i class="uil uil-star testimoni__icon-star"></i>
+                            </div>
+                        </div>
+
+                        <p class="testimoni__description">Saya mendukung Boedhi Harjanto jadi anggota legislatif karena lihat hasil kerja beliau yang sepertinya mengutamakan kepentingan masyarakat.</p>
+                    </div>
+
+                    <!--==================== TESTIMONI 3 ====================-->
+                    <div class="testimoni__content swiper-slide">
+                        <div class="testimoni__data">
+                            <div class="testimoni__header">
+                                <img src="assets/img/testimoni3.jpg" alt="" class="testimoni__img">
+
+                                <div>
+                                    <h3 class="testimoni__name">Rizky</h3>
+                                    <span class="testimoni__client">Pengunjung</span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <i class="uil uil-star testimoni__icon-star"></i>
+                                <i class="uil uil-star testimoni__icon-star"></i>
+                                <i class="uil uil-star testimoni__icon-star"></i>
+                                <i class="uil uil-star testimoni__icon-star"></i>
+                                <i class="uil uil-star testimoni__icon-star"></i>
+                            </div>
+                        </div>
+
+                        <p class="testimoni__description">Abis tau sama Boedhi Harjanto dan liat prestasinya, aku mantep banget dan yakin kalo dia nih caleg yang peduli sama rakyat dan siap berjuang buat kita semua.</p>
+                    </div>
+                </div>
+                
+                <!-- Add Pagination -->
+                <div class="swiper-pagination swiper-pagination-testimoni"></div>
+            </div>
+        </section>
+
+        <!--==================== DUKUNGAN ====================-->
+        <section class="dukungan section" id="dukungan">
+            <h2 class="section__title">Tulis Dukunganmu</h2>
+            <span class="section__subtitle">Semua pesan dukungan yang masuk akan dimoderasi terlebih dahulu</span>
+
+            <div class="dukungan__container container grid">
+                <div>
+                    <div class="dukungan__information">
+                        <i class="uil uil-instagram dukungan__icon"></i>
+
+                        <div>
+                            <h3 class="dukungan__title">Instagram</h3>
+                            <span class="dukungan__subtitle">@boedhiharjanto</span>
+                        </div>
+                    </div>
+
+                    <div class="dukungan__information">
+                        <i class="uil uil-envelope dukungan__icon"></i>
+
+                        <div>
+                            <h3 class="dukungan__title">Email</h3>
+                            <span class="dukungan__subtitle">boedhiharjanto@gmail.com</span>
+                        </div>
+                    </div>
+
+                    <div class="dukungan__information">
+                        <i class="uil uil-map-marker dukungan__icon"></i>
+
+                        <div>
+                            <h3 class="dukungan__title">Lokasi</h3>
+                            <span class="dukungan__subtitle">Tangerang Selatan</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="" class="dukungan__form grid">
+                    <div class="dukungan__inputs grid">
+                        <div class="dukungan__content">
+                            <label for="" class="dukungan__label">Nama Lengkap Anda</label>
+                            <input type="text" class="dukungan__input">
+                        </div>
+                        <div class="dukungan__content">
+                            <label for="" class="dukungan__label">Alamat Email Anda</label>
+                            <input type="email" class="dukungan__input">
+                        </div>
+                    </div>
+                    <div class="dukungan__content">
+                        <label for="" class="dukungan__label">Tuliskan Pesan Dukungan anda disini</label>
+                        <textarea name="" id="" cols="0" rows="7" class="dukungan__input"></textarea>
+                    </div>
+
+                    <div>
+                        <a href="#" class="button button--flex">
+                            Kirim
+                            <i class="uil uil-message button__icon"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">Boedhi Harjanto</h1>
+                    <span class="footer__subtitle">Calon Legislatif Tangerang Selatan</span>
+                </div>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#home" class="footer__link">Beranda</a>
+                    </li>
+                    <li>
+                        <a href="#profile" class="footer__link">Profile</a>
+                    </li>
+                    <li>
+                        <a href="#visimisi" class="footer__link">VisiMisi</a>
+                    </li>
+                    <li>
+                        <a href="#program" class="footer__link">Program</a>
+                    </li>
+                    <li>
+                        <a href="#foto" class="footer__link">Foto</a>
+                    </li>
+                    <li>
+                        <a href="#dukungan" class="footer__link">Dukungan</a>
+                    </li>
+                </ul>
+
+                <div class="footer__socials">
+                    <a href="https://www.facebook.com/boedhi.harjanto.1?mibextid=LQQJ4d" target="_blank" class="footer__social">
+                        <i class="uil uil-facebook-f"></i>
+                    </a>
+
+                    <a href="https://instagram.com/boedhiharjanto?igshid=MzRlODBiNWFlZA==" target="_blank" class="footer__social">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+
+                    <a href="https://www.tiktok.com/@boedhi.harjanto?_t=8eiPURsjB9F&_r=1" target="_blank" class="footer__social">
+                        <i class="uil uil-music-note"></i>
+                    </a>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; Boedhi Harjanto. All right reserved</p>
+        </div>
+    </footer>
+
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+
+
+    <!--==================== SWIPER JS ====================-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="assets/js/main.js"></script>
+
+    <!--==================== PENAWARAN JS ====================-->
+    <script src="assets/js/penawaran.js"></script>
+</body>
+
+</html>
